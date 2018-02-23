@@ -76,9 +76,6 @@ const slugFormatter = (template = "{{slug}}", entryData) => {
   // Convert slug to lower-case
   .toLocaleLowerCase()
 
-  // Replace periods and spaces with dashes.
-  .replace(/[.\s]/g, '-');
-
   return sanitizeSlug(slug);
 };
 
